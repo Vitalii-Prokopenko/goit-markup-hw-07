@@ -1,6 +1,6 @@
 /* === Global styles === */
 
-/* CSS variables */
+/* +CSS variables */
 
 :root {
   --main-color: #757575;
@@ -23,7 +23,7 @@
   --button-modal-background-color: #188ce8;
 }
 
-/* Global styles reset */
+/* +Global styles reset */
 
 p,
 h1,
@@ -36,7 +36,7 @@ h6 {
   margin-bottom: 0;
 }
 
-ul {
+.list {
   margin-top: 0;
   margin-bottom: 0;
   padding-left: 0;
@@ -44,13 +44,13 @@ ul {
   list-style: none;
 }
 
-button {
+.btn {
   font-weight: 700;
 
   cursor: pointer;
 }
 
-address {
+.address {
   font-style: normal;
 }
 
@@ -59,7 +59,7 @@ img {
   max-height: 100%;
 }
 
-a {
+.link {
   display: block;
 
   text-decoration: none;
@@ -77,7 +77,7 @@ body {
   background-color: var(--white-color);
 }
 
-/* Container */
+/* +Container */
 
 .container {
   width: 1200px;
@@ -85,20 +85,20 @@ body {
   padding: 0 15px;
 }
 
-/* Paddings for all sections except Hero */
+/* +Paddings for all sections except Hero */
 
 section:not(.hero) {
   padding-bottom: 94px;
   padding-top: 94px;
 }
 
-/* Zero bottom padding for feature section - overflows previous padding */
+/* +Zero bottom padding for feature section - overflows previous padding */
 
 section.features {
   padding-bottom: 0;
 }
 
-/* Visually hidden */
+/* +Visually hidden */
 
 .visually-hidden {
   position: absolute;
@@ -113,20 +113,20 @@ section.features {
   margin: -1px;
 }
 
-/* Visually observed headings */
+/* +Visually observed headings */
 
 .visually-observed {
   margin-bottom: 50px;
 
   font-style: normal;
   font-size: 36px;
-  line-height: 1.17;
+  line-height: calc(42 / 36);
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--second-color);
 }
 
-/* Logo */
+/* +Logo */
 
 .logo {
   font-family: 'Raleway';
@@ -158,30 +158,30 @@ section.features {
   display: flex;
 }
 
-/* Main menu */
+/* +Main menu */
 
-.main-nav {
+.nav {
   display: flex;
   align-items: center;
 }
 
-.main-menu {
+.nav__list {
   display: flex;
   margin-left: 93px;
 
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
-  line-height: 1.14;
+  line-height: calc(16 / 14);
   letter-spacing: 0.02em;
   /* list-style: none; */
 }
 
-.main-menu__item:not(:last-child) {
+.nav__item:not(:last-child) {
   margin-right: 50px;
 }
 
-.main-menu__link {
+.nav__link {
   color: var(--second-color);
 
   transition-property: color;
@@ -193,7 +193,6 @@ section.features {
 
 .contacts {
   display: flex;
-  
 
   /* font-style: normal;
   font-weight: 500;
@@ -204,7 +203,7 @@ section.features {
 }
 
 .header__contacts {
-margin-left: auto;
+  margin-left: auto;
 }
 
 .header__contacts__item:not(:last-child) {
@@ -247,9 +246,6 @@ margin-left: auto;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); */
 }
 
-
-
-
 /* Color of hovered / focused icons */
 
 .contacts__icon {
@@ -260,7 +256,7 @@ margin-left: auto;
 
 /* Paddings for all links in header except logo */
 
-.main-menu__link,
+.nav__link,
 .header__contacts__link {
   padding-top: 32px;
   padding-bottom: 32px;
@@ -268,14 +264,15 @@ margin-left: auto;
 
 /* Hover and focus for links in header except logo */
 
-.main-menu__link:hover,
-.main-menu__link:focus,
+.nav__link:hover,
+.nav__link:focus,
 .contacts__link:hover,
 .contacts__link:focus {
   color: var(--accent-color);
 }
 
-.main-menu__item {
+/* Nav item */
+.nav__item {
   position: relative;
 }
 
@@ -324,7 +321,6 @@ margin-left: auto;
   background-color: var(--background-hero);
 }
 
-
 .hero__heading {
   margin-bottom: 30px;
 
@@ -342,11 +338,11 @@ margin-left: auto;
 /* Button Order service */
 
 .hero__button {
-display: flex;
-justify-content: center;
-align-items: center;
-margin-left: auto;
-margin-right: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
 
   padding: 10px 32px;
 
@@ -740,7 +736,6 @@ margin-right: auto;
   flex-direction: column;
   /* margin-left: 0; */
 }
-
 
 .footer__contacts__item:not(:last-child) {
   margin-bottom: 9px;
