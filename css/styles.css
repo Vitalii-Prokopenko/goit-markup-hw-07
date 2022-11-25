@@ -938,7 +938,7 @@ margin-left: auto;
   height: 100%;
 }
 
-.modal-close-button {
+.modal-window__close-button {
   position: absolute;
   top: -32px;
   right: -32px;
@@ -957,11 +957,11 @@ margin-left: auto;
   border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-.modal-close-button:hover > svg {
+.modal-window__close-button:hover > .close-button__icon {
   fill: var(--accent-color);
 }
 
-.modal-window-heading {
+.modal-window__heading {
   margin-bottom: 12px;
 
   font-weight: 700;
@@ -1018,7 +1018,7 @@ margin-left: auto;
   align-items: center;
 }
 
-.form-field-label {
+.form-field__label {
   margin-bottom: 4px;
 
   font-size: 12px;
@@ -1028,8 +1028,8 @@ margin-left: auto;
   color: var(--main-color);
 }
 
-.form-field-input,
-.user-comment {
+.form-field__input,
+.form-field__user-comment {
   padding-left: 42px;
 
   width: 100%;
@@ -1043,14 +1043,14 @@ margin-left: auto;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.user-comment {
+.form-field__user-comment {
   padding: 16px 12px;
 
   resize: none;
   height: 120px;
 }
 
-.user-comment::placeholder {
+.form-field__user-comment::placeholder {
   font-size: 12px;
   line-height: 14px;
   letter-spacing: 0.01em;
@@ -1058,18 +1058,18 @@ margin-left: auto;
   color: rgba(117, 117, 117, 0.5);
 }
 
-.form-field-checkbox {
+.checkbox {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.modal-window-check {
+.checkbox__label {
   display: flex;
   align-items: center;
 }
 
-.label-text {
+.checkbox__text {
   font-weight: 400;
   font-size: 14px;
   line-height: calc(24 / 14);
@@ -1078,7 +1078,7 @@ margin-left: auto;
   color: var(--main-color);
 }
 
-.contract-link {
+.checkbox__contract-link {
   display: inline;
 
   text-decoration-line: underline;
@@ -1086,7 +1086,7 @@ margin-left: auto;
   color: var(--accent-color);
 }
 
-.icon-checkbox {
+.checkbox__icon {
   margin-right: 8px;
 
   width: 16px;
@@ -1101,7 +1101,7 @@ margin-left: auto;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.agree-check:checked + .icon-checkbox {
+.checkbox__input:checked + .checkbox__icon {
   border-color: transparent;
   background-image: url(../images/custom-checkbox/icon-check-new.svg);
   background-size: contain;
@@ -1110,7 +1110,7 @@ margin-left: auto;
 
 .user-data-submit {
   width: 200px;
-  height: 50px;
+  height: 100%;
 
   display: flex;
   justify-content: center;
@@ -1132,7 +1132,7 @@ margin-left: auto;
   background-color: var(--button-modal-background-color);
 }
 
-.form-field-icon {
+.form-field__icon {
   position: absolute;
   top: 32px;
   left: 15px;
@@ -1144,11 +1144,11 @@ margin-left: auto;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form-field:focus-within .form-field-input,
-.form-field:focus-within .user-comment {
+.form-field:focus-within .form-field__input,
+.form-field:focus-within .form-field__user-comment {
   border-color: var(--accent-color);
 }
 
-.form-field:focus-within .form-field-icon {
+.form-field:focus-within .form-field__icon {
   fill: var(--accent-color);
 }
