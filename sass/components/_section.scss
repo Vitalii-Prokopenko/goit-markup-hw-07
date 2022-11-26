@@ -23,5 +23,5 @@ section:not(.hero) {
   line-height: calc(42 / 36);
   text-align: center;
   letter-spacing: 0.03em;
-  color: $secondColor;
+  color: var(--second-color);
 }

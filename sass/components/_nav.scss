@@ -21,7 +21,7 @@
 }
 
 .nav__link {
-  color: $secondColor;
+  color: var(--second-color);
 
   transition-property: color;
   transition-duration: 250ms;
