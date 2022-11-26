@@ -1,7 +1,2 @@
-/* Html body styles */
-
-body {
-  font-family: 'Roboto', 'Raleway', sans-serif;
-  color: $mainColor;
-  background-color: $whiteColor;
-}
+@import './reset';
+@import './body';
