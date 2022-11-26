@@ -1,8 +1,8 @@
 /* === Variables === */
 root {
   /* Fonts */
-  --main-font: 'Roboto', sans-serif;
-  --secondary-font: 'Raleway', sans-serif;
+  --main-font: "Roboto", sans-serif;
+  --secondary-font: "Raleway", sans-serif;
   /* Basic colors */
   --white-color: #ffffff;
   --black-color: #000000;
@@ -39,7 +39,7 @@ root {
   padding: 0;
   clip: rect(0 0 0 0);
   -webkit-clip-path: inset(50%);
-  clip-path: inset(50%);
+          clip-path: inset(50%);
   margin: -1px;
 }
 
@@ -89,7 +89,7 @@ textarea {
 
 /* Html body styles */
 body {
-  font-family: var(--main-font);
+  font-family: "Roboto", "Raleway", sans-serif;
   color: var(--main-color);
   background-color: var(--white-color);
 }
@@ -159,8 +159,8 @@ section:not(.hero) {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .nav__list {
@@ -184,9 +184,9 @@ section:not(.hero) {
   -webkit-transition-property: color;
   transition-property: color;
   -webkit-transition-duration: 250ms;
-  transition-duration: 250ms;
+          transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Underline of current page */
@@ -203,6 +203,6 @@ section:not(.hero) {
   display: block;
   width: 100%;
   height: 4px;
-  content: '';
+  content: "";
   background-color: var(--accent-color);
-} /*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */
