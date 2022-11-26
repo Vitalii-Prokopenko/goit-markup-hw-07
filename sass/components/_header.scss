@@ -1,0 +1,11 @@
+/* Line border */
+
+.header {
+  border-bottom: 1px solid var(--header-bottom-border-color);
+}
+
+/* Header container */
+
+.header-container {
+  display: flex;
+}

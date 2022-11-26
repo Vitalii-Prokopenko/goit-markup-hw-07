@@ -1,19 +1,18 @@
 /* Logo */
 
 .logo {
-  font-family: var(--secondary-font);
+  font-family: $secondaryFont;
   font-style: normal;
   font-size: 26px;
   line-height: calc(31/26);
   letter-spacing: 0.03em;
-  text-decoration: none;
-  color: var(--accent-color);
+  color: $accentColor;
 }
 
 .logo--dark {
-  color: var(--black-color);
+  color: $blackColor;
 }
 
 .logo--light {
-  color: var(--white-color);
+  color: $whiteColor;
 }
