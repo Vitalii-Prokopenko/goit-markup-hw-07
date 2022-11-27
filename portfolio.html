@@ -15,49 +15,52 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <!-- <link rel="stylesheet" href="./css/styles.css" /> -->
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    <!-- === Logo, menu, email, telephone === -->
+   
+    <!-- === HEADER === -->
 
-    <header>
-      <div class="container nav-header">
-        <nav class="logo-and-menu-in-header">
-          <!-- Logo -->
+    <header class="header">
+      <div class="container header-container">
+        <nav class="nav">
 
-          <a class="logo" href="/" lang="en"
-            >Web<span class="colored-part-of-logo-in-header">Studio</span></a
+          <!-- == Logo == -->
+
+          <a class="link logo" href="/" lang="en"
+            >Web<span class="logo--dark">Studio</span></a
           >
 
           <!-- Menu -->
 
-          <ul class="main-menu">
-            <li>
-              <a href="./index.html">Студія</a>
+          <ul class="list nav__list">
+            <li class="nav__item">
+              <a class="link nav__link" href="./index.html">Студія</a>
             </li>
-            <li>
-              <a class="current" href="./portfolio.html">Портфоліо</a>
+            <li class="nav__item">
+              <a class="link nav__link current" href="./portfolio.html">Портфоліо</a>
             </li>
-            <li>
-              <a href="">Контакти</a>
+            <li class="nav__item">
+              <a class="link nav__link" href="">Контакти</a>
             </li>
           </ul>
         </nav>
 
-        <!-- email, telephone -->
+        <!-- Email, telephone -->
 
-        <ul class="contacts-in-header">
-          <li>
-            <a class="contact-link" href="mailto:info@devstudio.com">
-              <svg class="icon-contact" width="16" height="12">
+        <ul class="list contacts header__contacts">
+          <li class="contacts__item header__contacts__item">
+            <a class="link contacts__link header__contacts__link" href="mailto:info@devstudio.com">
+              <svg class="contacts__icon" width="16" height="12">
                 <use href="./images/symbol-defs.svg#icon-envelope"></use>
               </svg>
               info@devstudio.com
             </a>
           </li>
-          <li>
-            <a class="contact-link" href="tel:+380961111111">
-              <svg class="icon-contact" width="10" height="16">
+          <li class="contacts__item">
+            <a class="link contacts__link header__contacts__link" href="tel:+380961111111">
+              <svg class="contacts__icon" width="10" height="16">
                 <use href="./images/symbol-defs.svg#icon-smartphone"></use>
               </svg>
               +38 096 111 11 11
@@ -288,27 +291,36 @@
     <!-- === FOOTER ==== -->
 
     <footer class="footer">
-      <div class="container">
+      <div class="container footer-container">
+
         <!-- 1st block in footer Address and contacts -->
 
         <div class="footer-block">
+
           <!-- Logo -->
-          <a href="/" lang="en" class="logo"
-            >Web<span class="colored-part-of-logo-in-footer">Studio</span></a
+
+          <a href="/" lang="en" class="link logo footer__logo"
+            >Web<span class="logo--light">Studio</span></a
           >
-          <address>
-            <ul class="contacts-in-footer">
-              <li>
+          <address class="address">
+            <ul class="list contacts footer__contacts">
+              <li class="contacts__item footer__contacts__item">
+
                 <!-- Postal address not interactive contact -->
+
                 <p class="postal-address">м. Київ, пр-т Лесі Українки, 26</p>
               </li>
-              <li>
+              <li class="contacts__item footer__contacts__item">
+
                 <!-- Email interactive contact -->
-                <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+
+                <a class="link footer__contacts__link" href="mailto:info@devstudio.com">info@devstudio.com</a>
               </li>
-              <li>
+              <li class="contacts__item footer__contacts__item">
+
                 <!-- Phone interactive contact -->
-                <a href="tel:+380961111111">+38 096 111 11 11</a>
+
+                <a class="link footer__contacts__link" href="tel:+380961111111">+38 096 111 11 11</a>
               </li>
             </ul>
           </address>
@@ -318,30 +330,30 @@
 
         <div class="footer-block">
           <h2 class="social-links-heading-in-footer">приєднуйтесь</h2>
-          <ul class="studio-social-links">
-            <li>
-              <a href="#" class="social-link">
+          <ul class="list social-links-list">
+            <li class="social-links-item">
+              <a href="#" class="link social-link footer__social-link">
                 <svg width="20" height="20">
                   <use href="./images/symbol-defs.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
-            <li>
-              <a href="#" class="social-link">
+            <li class="social-links-item">
+              <a href="#" class="link social-link footer__social-link">
                 <svg width="20" height="20">
                   <use href="./images/symbol-defs.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
-            <li>
-              <a href="#" class="social-link">
+            <li class="social-links-item">
+              <a href="#" class="link social-link footer__social-link">
                 <svg width="20" height="20">
                   <use href="./images/symbol-defs.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
-            <li>
-              <a href="#" class="social-link">
+            <li class="social-links-item">
+              <a href="#" class="link social-link footer__social-link">
                 <svg width="20" height="20">
                   <use href="./images/symbol-defs.svg#icon-linkedin"></use>
                 </svg>
@@ -359,13 +371,13 @@
               type="email"
               name="user-email"
               id="user-mail"
-              class="user-email-input"
+              class="subscribe-form__input"
               placeholder=" "
             />
-            <label class="user-email-label" for="user-mail">E-mail</label>
-            <button type="submit" class="subscribe-button">
+            <label class="subscribe-form__label" for="user-mail">E-mail</label>
+            <button type="submit" class="btn subscribe-form__button">
               Підписатися
-              <svg class="icon-send" width="24" height="24">
+              <svg class="subscribe-form__icon" width="24" height="24">
                 <use href="./images/symbol-defs.svg#icon-send"></use>
               </svg>
             </button>
