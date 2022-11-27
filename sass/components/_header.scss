@@ -6,6 +6,35 @@
 
 /* Header container */
 
-.header-container {
+.header__container {
   display: flex;
+}
+
+.header__contacts {
+  margin-left: auto;
+}
+
+.header__contacts-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.header__contacts-link {
+  // display: flex;
+  justify-content: center;
+  // align-items: center;
+
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  /* font-style: normal; */
+  font-weight: 500;
+  /* font-size: 14px; */
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  color: $main-color;
+
+  /* transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); */
 }

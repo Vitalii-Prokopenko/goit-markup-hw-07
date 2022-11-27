@@ -1,16 +1,29 @@
 /* == Feature section == */
 
-.features-list {
+.feature-list {
   display: flex;
 }
 
-.features-list__item {
+.feature-list__item {
   margin-right: 30px;
   width: 270px;
 }
 
-.features-list__item:last-child {
+.feature-list__item:last-child {
   margin-right: 0;
+}
+
+.feature__icon-div {
+  margin-bottom: 30px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+  width: 100%;
+
+  background-color: $background-color-second;
+  border-radius: 4px;
 }
 
 .feature__heading {
@@ -28,17 +41,4 @@
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-}
-
-.feature__icon-div {
-  margin-bottom: 30px;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 120px;
-  width: 100%;
-
-  background-color: $background-color-second;
-  border-radius: 4px;
 }

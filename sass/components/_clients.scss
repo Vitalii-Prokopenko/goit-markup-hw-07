@@ -5,13 +5,13 @@
   justify-content: center;
 }
 
-.client-list__item {
+.client-list__item:not(:last-child) {
   margin-right: 30px;
 }
 
-.client-list__item:last-child {
-  margin-right: 0;
-}
+// .client-list__item:last-child {
+//   margin-right: 0;
+// }
 
 .client-list__link {
   display: flex;
