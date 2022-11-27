@@ -3,92 +3,57 @@
 .team {
   background-color: $background-color-second;
 
-&-list {
-  display: flex;
+  &-list {
+    display: flex;
+  }
+
+  &-list__item {
+    background-color: $white-color;
+    box-shadow: 0px 4px 4px 0px hsla(0, 0%, 0%, 0.25);
+    border-radius: 0px 0px 4px 4px;
+
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
 }
 
-&-list__item {
-  // margin-right: 30px;
+.member {
+  &__meta {
+    padding: 30px 15px;
+  }
 
-  background-color: $white-color;
-  box-shadow: 0px 4px 4px 0px hsla(0, 0%, 0%, 0.25);
-  border-radius: 0px 0px 4px 4px;
+  &__name {
+    margin-bottom: 10px;
 
-&:not(:last-child) {
-  margin-right: 30px;
-}
-}
-}
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.1875;
+    text-align: center;
+    letter-spacing: 0.03em;
 
-.member{
-&__meta {
-  padding: 30px 15px;
-}
+    color: $second-color;
+  }
 
-&__name {
-  margin-bottom: 10px;
+  &__position {
+    margin-bottom: 16px;
 
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.1875;
-  text-align: center;
-  letter-spacing: 0.03em;
+    font-size: 16px;
+    line-height: 1.1875;
+    text-align: center;
+    letter-spacing: 0.03em;
 
-  color: $second-color;
-}
+    color: $main-color;
+  }
 
-&__position {
-  margin-bottom: 16px;
+  &__social-link {
+    fill: $background-color-social-link;
+    background-color: inherit;
 
-  font-size: 16px;
-  line-height: 1.1875;
-  text-align: center;
-  letter-spacing: 0.03em;
-
-  color: $main-color;
-}
-
-// .social-links-list {
-//   display: flex;
-//   justify-content: center;
-// }
-
-// .social-links-item:not(:last-child) {
-//   margin-right: 10px;
-// }
-
-/* .social-links-list__item:last-child {
-  margin-right: 0px;
-} */
-
-// .social-link {
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   width: 44px;
-//   height: 44px;
-
-//   border-radius: 50%;
-//   /* fill: var(--background-color-social-link);
-//   background-color: inherit; */
-
-//   transition-property: background-color, fill;
-//   transition-duration: 250ms;
-//   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-// }
-
-&__social-link {
-  fill: $background-color-social-link;
-  background-color: inherit;
-
-  /* transition-property: background-color, fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); */
-
-&:hover,
-&:focus {
-  fill: $white-color;
- }
-}
+    &:hover,
+    &:focus {
+      fill: $white-color;
+    }
+  }
 }

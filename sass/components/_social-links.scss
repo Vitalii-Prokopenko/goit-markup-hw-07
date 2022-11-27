@@ -1,12 +1,12 @@
-/* === Social links === */ 
+/* === Social links === */
 
 .social-links {
   display: flex;
   justify-content: center;
 
-&__item:not(:last-child) {
-  margin-right: 10px;
-}
+  &__item:not(:last-child) {
+    margin-right: 10px;
+  }
 }
 
 .social-link {
@@ -17,15 +17,13 @@
   height: 44px;
 
   border-radius: 50%;
-  /* fill: var(--background-color-social-link);
-  background-color: inherit; */
 
   transition-property: background-color, fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-&:hover,
-&:focus {
+  &:hover,
+  &:focus {
     background-color: $accent-color;
-}
+  }
 }
