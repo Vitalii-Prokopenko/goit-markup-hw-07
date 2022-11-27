@@ -1,0 +1,38 @@
+/* == Activities section == */
+
+.activities-list {
+  display: flex;
+}
+
+.activities-list__item {
+  margin-right: 30px;
+}
+
+.activities-list__item:last-child {
+  margin-right: 0;
+}
+
+.activity__thumb {
+  position: relative;
+}
+
+.activity__description {
+  position: absolute;
+  bottom: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 70px;
+  width: 100%;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $white-color;
+  background-color: $activity-icon-background-color;
+}

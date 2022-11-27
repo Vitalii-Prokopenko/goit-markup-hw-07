@@ -1,0 +1,40 @@
+/* == Clients section == */
+
+.client-list {
+  display: flex;
+  justify-content: center;
+}
+
+.client-list__item {
+  margin-right: 30px;
+}
+
+.client-list__item:last-child {
+  margin-right: 0;
+}
+
+.client-list__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
+
+  border: 1px solid $background-color-social-link;
+  color: $background-color-social-link;
+  border-radius: 4px;
+
+  transition-property: border-color, color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.client-list__link:hover,
+.client-list__link:focus {
+  border-color: $accent-color;
+  color: $accent-color;
+}
+
+.client-list__icon {
+  fill: currentColor;
+}
