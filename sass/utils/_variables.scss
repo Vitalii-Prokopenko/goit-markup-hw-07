@@ -1,5 +1,7 @@
 /* === Variables === */ 
 
+$mainColor: #757575;
+
 root {
 /* Fonts */
   --main-font: 'Roboto', sans-serif;
@@ -10,7 +12,7 @@ root {
   --black-color: #000000;
 
   /* Text colors */
-  --main-color: #757575;
+  // --main-color: #757575;
   --second-color: #212121;
   --accent-color: #2196f3;
   --interactive-contacts-in-footer-color: rgba(255, 255, 255, 0.6);
