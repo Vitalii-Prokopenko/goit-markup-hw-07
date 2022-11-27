@@ -5,9 +5,8 @@
 
   display: flex;
   flex-wrap: wrap;
-}
 
-.grid__item {
+&__item {
   position: relative;
 
   margin: 15px;
@@ -15,14 +14,16 @@
   background-color: $white-color;
 }
 
-.grid__link {
+&__link {
   transition-property: box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.grid__link:hover {
+
+&:hover {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+}
 }
 
 .project {
@@ -31,9 +32,8 @@
   border-left: 1px solid $portfolio-card-border-color;
   border-right: 1px solid $portfolio-card-border-color;
   border-bottom: 1px solid $portfolio-card-border-color;
-}
 
-.project__name {
+&__name {
   margin-bottom: 4px;
 
   font-style: normal;
@@ -44,15 +44,17 @@
   color: $second-color;
 }
 
-.project__type {
+&__type {
   font-size: 16px;
   line-height: 1.875;
   letter-spacing: 0.03em;
 
   color: $main-color;
 }
+}
 
-.card__overlay {
+.card {
+&__overlay {
   position: relative;
   overflow: hidden;
 
@@ -64,7 +66,7 @@
   height: 100%;
 }
 
-.card__description {
+&__description {
   position: absolute;
   left: 0;
   bottom: 0;
@@ -82,8 +84,9 @@
   transition-property: transform;
   transition-duration: 250ms;
   transition-timing-function: linear;
-}
 
-.grid__link:hover .card__description {
+.grid__link:hover & {
   transform: translateY(0%);
+}
+}
 }

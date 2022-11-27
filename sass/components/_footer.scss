@@ -4,15 +4,14 @@
   padding: 60px 0;
 
   background-color: $background-footer;
-}
 
-.footer-container {
+&-container {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
 }
 
-.footer__logo {
+&__logo {
   margin-bottom: 20px;
 }
 
@@ -22,28 +21,23 @@
 //   /* margin-left: 0; */
 // }
 
-.footer__contacts {
+&__contacts {
   /* display: flex; */
   flex-direction: column;
   /* margin-left: 0; */
-}
 
-.footer__contacts-item:not(:last-child) {
+
+&-item:not(:last-child) {
   margin-bottom: 9px;
 }
 
 /* Postal address not interactive contact in footer */
 
-.postal-address {
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: $white-color;
-}
+
 
 /* Email and phone interactive contacts in footer */
 
-.footer__contacts-link {
+&-link {
   /* list-style: none; */
   /* font-size: 14px; */
   /* font-style: normal; */
@@ -58,7 +52,30 @@
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); */
 }
+}
 
+&__social-link {
+  background-color: $footer-social-link-background-color;
+  fill: $white-color;
+
+  /* transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); */
+
+
+&:hover,
+&:focus {
+  background-color: $accent-color;
+}
+}
+}
+
+.postal-address {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: $white-color;
+}
 // .footer__contacts__link:hover,
 // .footer__contacts__link:focus {
 //   color: $accent-color;
@@ -91,19 +108,19 @@
   margin-right: 0px;
 } */
 
-.footer__social-link {
-  background-color: $footer-social-link-background-color;
-  fill: $white-color;
+// .footer__social-link {
+//   background-color: $footer-social-link-background-color;
+//   fill: $white-color;
 
-  /* transition-property: background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); */
-}
+//   /* transition-property: background-color;
+//   transition-duration: 250ms;
+//   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); */
+// }
 
-.footer__social-link:hover,
-.footer__social-link:focus {
-  background-color: $accent-color;
-}
+// .footer__social-link:hover,
+// .footer__social-link:focus {
+//   background-color: $accent-color;
+// }
 
 // /* Subscribe block in footer */
 

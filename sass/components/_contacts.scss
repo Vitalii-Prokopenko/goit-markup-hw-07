@@ -9,7 +9,7 @@
   line-height: 1.14;
   letter-spacing: 0.02em; */
   /* list-style: none; */
-}
+
 
 // .header__contacts {
 //   margin-left: auto;
@@ -25,7 +25,7 @@
 //   margin-right: 50px;
 // }
 
-.contacts__link {
+&__link {
   display: flex;
   // justify-content: center;
   align-items: center;
@@ -41,7 +41,7 @@
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+
 
 // .header__contacts-link {
 //   /* display: flex;
@@ -68,15 +68,16 @@
 
 /* Hover and focus for contacts-links */
 
-.contacts__link:hover,
-.contacts__link:focus {
+&:hover,
+&:focus {
   color: $accent-color;
 }
-
+}
 /* Color of hovered / focused icons */
 
-.contacts__icon {
+&__icon {
   margin-right: 10px;
 
   fill: currentColor;
+}
 }

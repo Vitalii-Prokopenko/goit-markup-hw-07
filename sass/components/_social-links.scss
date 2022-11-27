@@ -3,10 +3,10 @@
 .social-links {
   display: flex;
   justify-content: center;
-}
 
-.social-links__item:not(:last-child) {
+&__item:not(:last-child) {
   margin-right: 10px;
+}
 }
 
 .social-link {
@@ -23,9 +23,9 @@
   transition-property: background-color, fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.social-link:hover,
-.social-link:focus {
+&:hover,
+&:focus {
     background-color: $accent-color;
+}
 }

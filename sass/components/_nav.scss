@@ -3,9 +3,9 @@
 .nav {
   display: flex;
   align-items: center;
-}
 
-.nav__list {
+
+&__list {
   display: flex;
   margin-left: 93px;
 
@@ -16,11 +16,16 @@
   letter-spacing: 0.02em;
 }
 
-.nav__item:not(:last-child) {
+&__item {
+  position: relative;
+
+
+&:not(:last-child) {
   margin-right: 50px;
 }
+}
 
-.nav__link {
+&__link {
   padding-top: 32px;
   padding-bottom: 32px;
 
@@ -29,11 +34,13 @@
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+
 
 /* Hover and focus for nav-links */
 
-.nav__link:hover,
-.nav__link:focus {
+&:hover,
+&:focus {
   color: $accent-color;
+}
+}
 }

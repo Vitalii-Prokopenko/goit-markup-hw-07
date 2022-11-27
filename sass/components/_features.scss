@@ -2,18 +2,21 @@
 
 .feature-list {
   display: flex;
-}
 
-.feature-list__item {
+
+&__item {
   margin-right: 30px;
   width: 270px;
 }
 
-.feature-list__item:last-child {
+&__item:last-child {
   margin-right: 0;
 }
+}
 
-.feature__icon-div {
+.feature{
+
+&__icon-div {
   margin-bottom: 30px;
 
   display: flex;
@@ -26,7 +29,7 @@
   border-radius: 4px;
 }
 
-.feature__heading {
+&__heading {
   margin-bottom: 10px;
 
   font-style: normal;
@@ -37,8 +40,9 @@
   color: $second-color;
 }
 
-.feature__description {
+&__description {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+}
 }
