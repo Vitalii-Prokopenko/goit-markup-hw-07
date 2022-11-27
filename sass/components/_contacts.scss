@@ -1,0 +1,74 @@
+/* Contacts in header */
+
+.contacts {
+  display: flex;
+
+  /* font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em; */
+  /* list-style: none; */
+}
+
+.header__contacts {
+  margin-left: auto;
+}
+
+.header__contacts__item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.contacts__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-style: normal;
+  /* font-weight: 500; */
+  font-size: 14px;
+  /* line-height: 1.14;
+  letter-spacing: 0.02em; */
+
+  /* color: var(--main-color); */
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header__contacts__link {
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  /* font-style: normal; */
+  font-weight: 500;
+  /* font-size: 14px; */
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  color: $main-color;
+
+  /* transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); */
+}
+
+/* Color of hovered / focused icons */
+
+.contacts__icon {
+  margin-right: 10px;
+
+  fill: currentColor;
+}
+
+/* Hover and focus for contacts-links */
+
+.contacts__link:hover,
+.contacts__link:focus {
+  color: $accent-color;
+}

@@ -21,9 +21,19 @@
 }
 
 .nav__link {
-  color: var(--second-color);
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  color: $second-color;
 
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Hover and focus for nav-links */
+
+.nav__link:hover,
+.nav__link:focus {
+  color: $accent-color;
 }

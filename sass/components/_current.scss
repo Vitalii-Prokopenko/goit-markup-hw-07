@@ -5,7 +5,7 @@
 }
 
 .current {
-  color: var(--accent-color);
+  color: $accent-color;
 
   &::after {
     position: absolute;
@@ -17,6 +17,6 @@
     height: 4px;
 
     content: '';
-    background-color: var(--accent-color);
+    background-color: $accent-color;
   }
 }
