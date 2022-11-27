@@ -257,4 +257,61 @@ section:not(.hero) {
 .contacts__link:hover,
 .contacts__link:focus {
   color: #2196f3;
+}
+
+/* === MAIN PAGE === */
+/* == Hero section == */
+.hero {
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  text-align: center;
+  height: 600px;
+  max-width: 1600px;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/hero/hero-img.img");
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/hero-img.img");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #c4c4c4;
+}
+
+.hero__heading {
+  margin-bottom: 30px;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-align: center;
+}
+
+/* Button Order service */
+.hero__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px 32px;
+  /* font-family: inherit; */
+  /* font-style: normal; */
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  background-color: #2196f3;
+  -webkit-box-shadow: 0px 4px 4px hsla(0deg, 0%, 0%, 0.25);
+          box-shadow: 0px 4px 4px hsla(0deg, 0%, 0%, 0.25);
+  border-radius: 4px;
+  border: 0;
 }/*# sourceMappingURL=main.css.map */
